@@ -1,0 +1,134 @@
+
+:root {
+    --navbackground: #000000a0;
+    --navbarfont: #333;
+    --linkbackground: #abbb0000;
+    --homebackground: #00000000;
+    --hovercolor: #fff;
+    --hoverback: #00000090;
+    --clear: #00000000;
+}
+
+.navigation-bar {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--navbackground);
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    /* height: 35px; */
+
+    position: fixed;
+    top: 0;
+}
+.nav-home {
+    background-color: var(--homebackground);
+    padding: 10px;
+    margin: auto auto auto 0;
+    font-size: 35px;
+    border-radius: 15px;
+}
+
+.collapse-links {
+    /* the ul  */
+    display: inline-flex;
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    
+
+}
+.collapse-links > li {
+    /* ul's li  */
+    background-color: var(--linkbackground);
+    padding: 15px 15px 0;
+    border-radius: 10px;
+    /* margin: 0; */
+}
+/* .links-a {
+    padding-top: 25px;
+    margin-top: 10px;
+} */
+.collapse-links > li > a:hover {
+    color: var(--hovercolor);
+}
+.nav-home > a:hover {
+    color: var(--hovercolor);
+    
+}
+.collapse-links > li:hover {
+    background-color: var(--hoverback);
+}
+.nav-home:hover {
+    background-color: var(--hoverback);
+}
+
+.burgericon {
+    display: none;
+    float: right;
+    padding: 5px;
+    size: 25px;
+    border-radius: 20%;
+}
+
+
+
+
+@media (max-width: 800px) {
+    .navigation-bar {
+        font-size: 20px;
+    }
+    .nav-home {
+        font-size: 25px;
+    }
+
+    .collapse-links {
+        /* links before burger  */
+        display: none;
+    }
+    .collapse-links > li {
+        /* center links again for small drop down  */
+        padding: 10px;
+    }
+    .responsive-links {
+        display: inline-block;
+        /* float: left; */
+        margin-right: auto;
+        width: 100%;
+        text-align: left;
+        background-color: var(--navbackground);
+        
+    }
+    .responsive-links > a:hover {
+        background-color: var(--hoverback);
+    }
+
+    .burgericon {
+        display: block; 
+    }
+    .active-burger {
+        background-color: var(--hoverback);
+    }
+    .burgericon:hover {
+        background-color: var(--hoverback);
+    }
+}
+
+
+/* 
+
+<div class="navbar">
+            <h3 class="nav-home">Home</h3>
+            <ul class="collapse-links">
+                <li>
+                    <a href="doggy.html">Doggy</a>
+                </li>
+                <li>
+                    <a href="navfoot.html">navfoot</a>
+                </li>
+            </ul>
+            <img src="/public/images/caricon32.png" alt="hamburger menu icon" class="burgericon">
+            
+
+        </div> */

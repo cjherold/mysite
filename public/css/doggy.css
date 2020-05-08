@@ -1,0 +1,129 @@
+/* for daisy website has large image backgrounds and cards  */
+:root {
+    --titles: #333333b0;
+    --paragraphs: #000000a0;
+    --fontcolors: #fff;
+    --clear: #00000000;
+}
+
+#section-1 {
+    background-image: url("../images/doggy.png");
+    /* go under navbar */
+    width: 100%;
+    height: 120vh;
+    margin-top: -5vh;
+}
+#section-2 {
+    background-image: url("../images/dogsleepy.png");
+    /* background-position-x: 0; */
+}
+#section-3 {
+    background-image: url("../images/dogonchair.png");
+    
+}
+section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    height: 100vh;
+    z-index: -1;
+    
+}
+
+/* the cards on the images  */
+.s1-contents {
+    display: block;
+    margin-top: 40%;
+    margin-left: 3%;
+    margin-right: auto;
+    width: 40%;
+}
+.s2-contents {
+    position: relative;
+    top: 0;
+    right: 40px;
+    display: block;
+    margin-top: 30%;
+    margin-left: auto;
+    margin-right: 5px;
+    width: 50%;
+}
+.s3-contents {
+    position: relative;
+    top: 0;
+    right: 40px;
+    display: block;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: 5px;
+    width: 20%;
+
+}
+
+/* title and paragraph for card  */
+section h1 {
+    background-color: var(--titles);
+}
+section p {
+    background-color: var(--paragraphs);
+    color: var(--fontcolors);
+    padding: 10px 20px;
+}
+
+.image-changers {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: var(--paragraphs);
+    width: 100%;
+    height: 25px;
+
+}
+.image-changers button {
+    background-color: var(--clear);
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 25px;
+}
+
+@media (max-width: 800px) {
+    /* for shrinking screen size  */
+    section {
+        font-size: 50%;
+    }
+    h1 {
+        font-size: 90%;
+    }
+    .image-changers button {
+        font-size: 15px;
+    }
+    .s1-contents {
+        position: relative;
+        top: 57%;
+        height: 8%;
+        left: 0;
+        width: 96%;
+        margin-left: 2%;
+    }
+    .s2-contents {
+        position: relative;
+        top: 55%;
+        height: 8%;
+        left: 0;
+        width: 96%;
+        margin-left: 2%;
+    }
+    .s3-contents {
+        position: relative;
+        top: 73%;
+        height: 8%;
+        left: 0;
+        width: 96%;
+        margin-left: 2%;
+        
+    }
+}

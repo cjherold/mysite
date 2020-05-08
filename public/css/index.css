@@ -1,0 +1,27 @@
+#section-1 {
+    background-color: #5588a3;
+    height: 120vh;
+}
+#section-2 {
+    background-image: url("../images/doggy.png");
+}
+#first-title {
+    /* go below navbar  */
+    margin-top: 20vh;
+}
+
+section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    height: 100vh;
+    z-index: -1;
+    margin: -5vh;
+}
+h1 {
+    background-color: #000000a0;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+}

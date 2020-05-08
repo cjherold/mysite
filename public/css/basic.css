@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+:root {
+    --container-back: #333333e0;
+    --titleColor: #fff;
+    --pColor: #fff;
+    --containerShadow: 3px 3px 10px 2px #000000d8;
+    --lightest: #e8e8e8;
+    --lBlue: #5588a3;
+    --mBlue: #145374;
+    --dBlue: #00334e;
+
+    --whiteblue: #cae9ff;
+    --lighterblue: #5fa8d3;
+    --lightgreen: #7ae582;
+    --darkerblue: #1b4965;
+    --greyblack: #333;
+
+    --links: #fff;
+    --clear: #00000000;
+}
+/* reset everything for browser defaults */
+html, body, header, footer, hgroup, nav, main, article, section, figure, figcaption, h1, h2, h3, ul, li, body, div, p, img
+{
+   margin: 0;
+   padding: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   border: 0;
+}
+html {
+    /* background-color: var(--lighterblue); */
+    background-color: var(--darkerblue);
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 200%;
+    font-family: 'Rancho', cursive;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    background-color: var(--greyblack);
+    font-size: 45px;
+    padding: 20px;
+    margin: auto;
+}
+
+a {
+    color: var(--links);
+    text-decoration: none;
+}
+/* img {
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+} */
