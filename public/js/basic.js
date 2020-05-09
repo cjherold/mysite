@@ -15,7 +15,8 @@ window.onload = () => {
     $('.burgericon').click(() => burgerTime());
 
     //only add footer to footers with this class
-    $('.add-footer').append('<h5>add-footer</h5>');
+    $('.add-footer').append('<div class="footer-area"><div class="people"><p>Chris Herold</p><a href="https://github.com/cjherold">Github</a><br><a href="mrchristopherherold@gmail.com">MrChristopherHerold@gmail.com</a></div><div class="course"><p><a href="doggy.html">Doggy</a></p><p>|</p><p><a href="">Spark</a></p><p>|</p><p><a href="">2020</a></p></div></div>');
+
     
 
 
@@ -30,7 +31,7 @@ window.onload = () => {
         console.log('next: ' + current2 + ' ' + current3);
         if (section == "2") {
             
-            let images = ["/public/images/dogsleepy.png", "/public/images/upsidedown.png", "/public/images/dogtongue.png", "/public/images/beddog.png"];
+            let images = ["/public/images/dogsleepy.png", "/public/images/upsidedown.png", "/public/images/dogtongue.png"];
             
             current2 += 1;
             if (current2 == images.length) {
@@ -41,8 +42,8 @@ window.onload = () => {
         }
         
         if (section == "3") {
-            let images = ["/public/images/dogonchair.png", "/public/images/dogandme.png"];
-            let current3 = 0;
+            let images = ["/public/images/beddog.png", "/public/images/dogonchair.png"];
+            
             current3 += 1;
             if (current3 == images.length) {
                 current3 = 0;
@@ -55,7 +56,7 @@ window.onload = () => {
     const prevImage = (section) => {
         console.log('next: ' + current2 + ' ' + current3);
         if (section == "2") {
-            let images = ["/public/images/dogsleepy.png", "/public/images/upsidedown.png", "/public/images/dogtongue.png", "/public/images/beddog.png"];
+            let images = ["/public/images/dogsleepy.png", "/public/images/upsidedown.png", "/public/images/dogtongue.png"];
             current2 -= 1;
             if (current2 < 0) {
                 current2 = (images.length - 1);
@@ -65,7 +66,7 @@ window.onload = () => {
         }
         
         if (section == "3") {
-            let images = ["/public/images/dogonchair.png", "/public/images/dogandme.png"];
+            let images = ["/public/images/beddog.png", "/public/images/dogonchair.png"];
             current3 -= 1;
             if (current3 < 0) {
                 current3 = (images.length - 1);
