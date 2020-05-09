@@ -15,7 +15,7 @@ window.onload = () => {
     $('.burgericon').click(() => burgerTime());
 
     //only add footer to footers with this class
-    $('.add-footer').append('<div class="footer-area"><div class="people"><p>Chris Herold</p><a href="https://github.com/cjherold">Github</a><br><a type="email" href="mrchristopherherold@gmail.com">MrChristopherHerold@gmail.com</a></div><div class="course"><p><a href="doggy.html">Doggy</a></p><p>|</p><p><a href="">Spark</a></p><p>|</p><p><a href="">2020</a></p></div></div>');
+    $('.add-footer').append('<div class="footer-area"><div class="people"><p>Chris Herold</p><a href="https://github.com/cjherold">Github</a><br><a href="mailto:mrchristopherherold@gmail.com">MrChristopherHerold@gmail.com</a></div><div class="course"><p><a href="doggy.html">Doggy</a></p><p>|</p><p><a href="">Spark</a></p><p>|</p><p><a href="">2020</a></p></div></div>');
 
     
 
