@@ -9,9 +9,9 @@
 #section-1 {
     background-image: url("../images/doggy.png");
     /* go under navbar */
-    width: 100%;
     height: 120vh;
     margin-top: -5vh;
+    width: 100%;
 }
 #section-2 {
     background-image: url("../images/dogsleepy.png");
@@ -19,6 +19,8 @@
 }
 #section-3 {
     background-image: url("../images/beddog.png");
+    height: 120vh;
+    
     
 }
 section {
@@ -107,7 +109,8 @@ section p {
     }
     .s1-contents {
         position: relative;
-        top: 57%;
+        /* top: 57%; */
+        margin-top: 57%;
         height: 8%;
         left: 0;
         width: 96%;
@@ -115,7 +118,8 @@ section p {
     }
     .s2-contents {
         position: relative;
-        top: 54%;
+        /* top: 54%; */
+        margin-top: 54%;
         height: 8%;
         left: 0;
         width: 96%;
@@ -123,11 +127,23 @@ section p {
     }
     .s3-contents {
         position: relative;
-        top: 72%;
+        /* top: 68%; */
+        margin-top: 68%;
         height: 8%;
         left: 0;
         width: 96%;
         margin-left: 2%;
         
+    }
+}
+@media (max-width: 500px) {
+    .s1-contents {
+        margin-top: 80vh;
+    }
+    .s2-contents {
+        margin-top: 65vh;
+    }
+    .s3-contents {
+        margin-top: 83vh;
     }
 }
