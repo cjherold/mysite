@@ -11,7 +11,8 @@
 }
 #welcome {
     /* go below navbar  */
-    margin-top: 80px;
+    font-size: 50px;
+    margin-top: 29px;
 }
 
 /* section {
@@ -28,4 +29,9 @@ h3 {
     /* margin-left: 20%;
     margin-right: 20%;
     width: 60%; */
+}
+@media (max-width: 850px) {
+    #welcome {
+        margin-top: 18px;
+    }
 }

@@ -35,7 +35,7 @@
     margin: auto;
     /* background-color: #fff; */
     box-sizing: border-box;
-    /* box-shadow: 3px 3px 20px 14px #83c5df; */
+    box-shadow: 3px 3px 20px 14px #83c5df;
     
 }
 .card-title {
@@ -79,7 +79,12 @@
     margin: auto;
     font-size: 23px;
 
-    box-shadow: 3px 3px 20px 14px #83c5df;
+    /* box-shadow: 3px 3px 20px 14px #83c5df; */
+    box-shadow: 3px 3px 2px 4px #11111198;
+
+
+
+
     /* box-shadow: 3px 3px 20px 14px #fff; */
 
 }
