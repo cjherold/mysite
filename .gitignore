@@ -1,7 +1,6 @@
-.DS_Store
-
-
 // Standard gitignore file with common ignores
+
+.DS_Store
 
 
 # Logs
