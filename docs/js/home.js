@@ -37,3 +37,5 @@ const skills = [
         name: 'Node'
     },
 ]
+
+$('#title-image').attr('src', '../img/mecoat.jpeg');
