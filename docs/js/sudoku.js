@@ -6,7 +6,12 @@
 const createBoard = () => {
     const puzzleRow = `
             <div class="puzzle-tile d-flex">
-                <p class="m-auto tile-number">1</p>
+                <p 
+                    class="m-auto tile-number"
+                    data-isHidden="1"
+                    data-correctAnswer=""
+                    data-guessedAnswer=""
+                >1</p>
             </div>
         `.repeat(9);
 
@@ -39,12 +44,24 @@ for (let i=0; i< tilesArray.length; i++ ) {
     tilesArray[i].id = i;
 }
 
-// -----------------
-// tiles on click
-// -----------------
-$('.puzzle-tile').on('click', function () {
-    // const tileValue = $(this).find('p')[0].innerHTML;
-    const tileValue = $(this)[0].children[0];
-    console.log(tileValue.innerHTML); // tile-number html
-    console.log(tileValue.id); // tile-number id
+// ----------------------------------------------------------
+// tiles on click (currently shows coordinates and tile id)
+// ----------------------------------------------------------
+$('.puzzle-tile').on('click', function (e) {
+    const x = e.pageX;
+    const y = e.pageY;
+    const tileNumber = e.target.firstElementChild;
+    console.log('is hidden: ' + e.target.firstElementChild.getAttribute('data-isHidden'));
+    console.log('correct answer: ' + e.target.firstElementChild.getAttribute('data-correctAnswer'));
+
+    spawnPickerWheel(x, y, tileNumber.id);
 });
+
+
+// -------------------------------------------
+// show picker wheel (currently logs values)
+// -------------------------------------------
+const spawnPickerWheel = (x, y, tileNumber) => {
+    console.log(`x: ${x}, y: ${y}`);
+    console.log('id: ' + tileNumber);
+}

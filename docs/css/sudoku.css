@@ -32,7 +32,7 @@ h1 {
     background-color: rgba(46, 89, 170, 0.808);
 }
 
-
+/* 9 big chuck seperation  ==============================*/
 .puzzle-row:nth-child(3) {
     margin-bottom: 3px;
 }
@@ -45,7 +45,13 @@ h1 {
 .puzzle-tile:nth-child(6) {
     margin-right: 3px;
 }
+/* ===================================================== */
 
+
+/* picker wheel ============================ */
+
+
+/* ========================================= */
 
 @media screen and (max-width: 600px) {
     .puzzle-tile {
