@@ -53,12 +53,18 @@ h1 {
 
 /* ========================================= */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .puzzle-tile {
         width: 2.5rem;
         height: 2.5rem;
     }
     .tile-number {
         font-size: .8rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .puzzle-title {
+        width: 2rem;
+        height: 2rem;
     }
 }
