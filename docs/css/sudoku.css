@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+html {
+    font-size: 16px;
+}
+body {
+    background-color: #333;
+    font-family: 'Rancho', cursive;
+    color: #f8f9fa;
+}
+.link-text {
+	font-size: 140%;
+}
+h1 {
+    font-size: 3rem;
+}
+.tile-number {
+    font-size: 1rem;
+}
+
+#puzzle-container {
+    max-width: 37rem;
+}
+.puzzle-tile {
+    background-color: rgba(80, 141, 255, 0.808);
+    border: 1px solid rgba(46, 89, 170, 0.808);
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.puzzle-tile:hover {
+    transition: 0.4s;
+    background-color: rgba(46, 89, 170, 0.808);
+}
+
+
+.puzzle-row:nth-child(3) {
+    margin-bottom: 3px;
+}
+.puzzle-row:nth-child(6) {
+    margin-bottom: 3px;
+}
+.puzzle-tile:nth-child(3) {
+    margin-right: 3px;
+}
+.puzzle-tile:nth-child(6) {
+    margin-right: 3px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .puzzle-tile {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .tile-number {
+        font-size: .8rem;
+    }
+}

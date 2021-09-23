@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
 
+html {
+    font-size: 16px;
+}
 body {
 	background-color: #1c5e81;
 }
@@ -61,22 +64,22 @@ body {
 		color: #f8f9fa;
 	}
 	#footer-area img {
-		width: 30px;
-		height: 30px;
+		width: 2rem;
+		height: 2rem;
 	}
 	#skills-images img{
-		width: 100px;
-		height: 100px;
+		width: 6.3rem;
+		height: 6.3rem;
 	}
 	#education-image {
-		width: 250px;
-		height: 150px;
+		width: 15.6rem;
+		height: 9.4rem;
 	}
 	
 	@media screen and (max-width: 600px) {
 		#skills-images img {
-			width: 50px;
-			height: 50px;
+			width: 3rem;
+			height: 3rem;
 		}
 		#title-area div {
 			font-size: 80%;
