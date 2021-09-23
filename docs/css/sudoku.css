@@ -62,9 +62,9 @@ h1 {
         font-size: .8rem;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     .puzzle-title {
-        width: 1.2rem;
-        height: 1.2rem;
+        width: 2rem;
+        height: 2rem;
     }
 }
