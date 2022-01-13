@@ -8,9 +8,9 @@
  class Game {
     constructor(difficulty) {
         const difficultyNumber = {
-            'easy': 90,
-            'medium': 40,
-            'hard': 15
+            'easy': 60,
+            'medium': 35,
+            'hard': 25
         }
         this.difficulty = difficultyNumber[difficulty];
         const selected = Math.floor(Math.random() * loadouts.length);
