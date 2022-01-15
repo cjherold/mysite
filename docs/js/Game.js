@@ -9,13 +9,12 @@
     constructor(difficulty) {
         const difficultyNumber = {
             'easy': 60,
-            'medium': 35,
-            'hard': 25
+            'medium': 50,
+            'hard': 35
         }
         this.difficulty = difficultyNumber[difficulty];
         const selected = Math.floor(Math.random() * loadouts.length);
         this.loadout = loadouts[selected] || [];
-        this.gameFinished = false;
     }
 
     // ----------------------------
@@ -46,10 +45,14 @@
      *  Setup on page load
      */
     initialize() {
-        // fill the puzzle with blank tiles
-        // $('#puzzle-container').html(this.createBoard());
+        this.swapLoadoutValues(2);
 
-        this.loadTileValues();
+        this.shuffleSections();
+
+        this.flattenLoadout();
+
+
+        this.fillBoard();
 
         // Picker wheel buttons functionality
         this.pickerWheelFunctionality();
@@ -57,7 +60,9 @@
         // Tiles spawn picker wheel on click
         this.tileClickFunctionality();
 
+
     }
+
 
     /**
      *  Tile click functionality
@@ -170,27 +175,6 @@
     }
 
 
-
-    clearOldEventListeners() {
-        // Might need to clear listeners when making new games...
-    }
-
-
-    /**
-     *  Shuffles the loadout values and fills the tiles with values
-     */
-    loadTileValues() {
-        this.swapLoadoutValues(2);
-
-        this.shuffleSections();
-
-        this.flattenLoadout();
-
-        this.mapLoadoutTotiles();
-
-        this.fillBoard();
-    }
-
     /**
      * Picks to random numbers and swaps them in the loadout
      */
@@ -277,24 +261,6 @@
         this.loadout = flatLoadout;
     }
 
-    mapLoadoutTotiles() {
-        // const allTiles = $('.puzzle-tile p');
-        // for (let i=0; i<81; i++) {
-        //     // Html value
-        //     allTiles[i].innerHTML = this.loadout[i];
-        //     // Correct answer
-        //     allTiles[i].attributes[2].value = this.loadout[i];
-        //     // Changeable
-        //     // allTiles[i].attributes[3].value = 'yes';
-        //     // Set the id of the tile
-        //     allTiles[i].id = i;
-        // }
-
-
-
-        // console.log(allTiles[1].attributes[2]);
-        // console.log(allTiles[1].dataset['correctanswer']);
-    }
 
     fillBoard() {
         const puzzleRow = (rowNumber) => {
@@ -342,18 +308,6 @@
 
     }
 
-    /**
-     * TODO ----------------------------------------------------------------------
-     */
-
-    newGame() {
-        // Maybe reload the page? need to find solution for difficulty settings then...
-    }
-    checkIfGameIsFinished() {
-        //check all tiles to see if game is finished
-
-        //if finished do something
-    }
 
 }
 

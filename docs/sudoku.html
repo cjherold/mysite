@@ -31,6 +31,28 @@
 
     <div id="puzzle-container" class="container"></div>
 
+    <div class="container d-flex my-4 justify-content-center">
+        <div class="col-6">
+            <div class="d-flex col-12">
+                <div class="col-4 d-flex">
+                    <label for="">Easy</label>
+                    <input class="my-1 mx-2" type="radio" name="difficulty" value="easy" checked="checked">
+                </div>
+                <div class="col-4 d-flex">
+                    <label for="">Medium</label>
+                    <input class="my-1 mx-2" type="radio" name="difficulty" value="medium">
+                </div>
+                <div class="col-4 d-flex">
+                    <label for="">Hard</label>
+                    <input class="my-1 mx-2" type="radio" name="difficulty" value="hard">
+                </div>
+            </div>
+
+            <div class="col-12 p-3 d-flex">
+                <button id="new-game" class="btn btn-light m-auto">New Game</button>
+            </div>
+        </div>
+    </div>
 
     <div id="picker-wheel" data-tileNumber="" class="d-none">
         <button id="close-wheel-btn" type="button" class="close">&times;</button>
