@@ -142,6 +142,11 @@ h1 {
   left: 65px;
 }
 
+.winner {
+  transition: 0.4s ease-in-out;
+  transform: scale(2);
+}
+
 /* ========================================= */
 @media screen and (max-width: 600px) {
   .puzzle-tile {
