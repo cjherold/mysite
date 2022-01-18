@@ -8,6 +8,9 @@ const content = () => {
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item cust-font">
+                <a class="nav-link link-text" href="./quizbuilder.html">QuizBuilder</a>
+            </li>
+            <li class="nav-item cust-font">
                 <a class="nav-link link-text" href="./sudoku.html">Sudoku</a>
             </li>
             <!-- <li class="nav-item cust-font">
