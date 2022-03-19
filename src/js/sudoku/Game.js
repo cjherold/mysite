@@ -1,4 +1,4 @@
-
+import loadouts from "./loadouts";
 /**
  * Main game class.
  * Selects loadout, shuffles, checks for win, new game
@@ -7,7 +7,7 @@
  class Game {
     constructor(difficulty) {
         const difficultyNumber = {
-            easy: 60,
+            easy: 90,
             medium: 50,
             hard: 35,
         };
@@ -28,7 +28,7 @@
         // Using the loadout, apply values to each tile on the board
         return this.createBoard();
     }
- 
+
     /**
      * Picks 2 random numbers and swaps them in the loadout
      */
@@ -164,3 +164,4 @@
     }
 }
 
+export default Game;

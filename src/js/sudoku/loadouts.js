@@ -45,3 +45,5 @@ const loadouts = [
     ],
 
 ];
+
+export default loadouts;

@@ -1,3 +1,7 @@
+import '@popperjs/core';
+import 'bootstrap';
+import QuizController from './QuizController';
+import $ from 'jquery';
 
 const qc = new QuizController({ selection: 0 });
 
@@ -33,7 +37,7 @@ function updateAsMultipleChoice (qc) {
 function updateAsTrueFalse (qc) {
     $('#true-false-answers').removeClass('d-none');
     $('#multiple-choice-answers').addClass('d-none');
-    
+
 }
 
 function finish (qc) {
@@ -41,7 +45,7 @@ function finish (qc) {
     $('#finished-message').html(`Final Score: ${qc.getScore()}/${qc.getQuestionCount()}`);
     $('.content-container').addClass('d-none');
     $('#finished-container').removeClass('d-none');
-   
+
 }
 
 
@@ -49,7 +53,7 @@ $('.true-false-button').on('click', function () {
     // If true/false
     const answer = $(this).data('tfvalue');
     qc.checkAnswer(answer);
-    
+
 
     return showResponseContainer();
 });
@@ -74,13 +78,13 @@ function showResponseContainer() {
     $('.content-container').addClass('d-none')
     $('#response-container').removeClass('d-none');
     $('#question-answer').html(qc.getAnswer());
-    
+
     return qc.nextQuestion();
 };
 
 $('#response-btn').on('click', function () {
     $('.content-container').addClass('d-none');
-    
+
     if (qc.isFinalQuestion()) return finish(qc);
     return updateUI(qc);
 });

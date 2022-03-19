@@ -65,3 +65,5 @@ const quizes = [
         ]
     }
 ];
+
+export default quizes;
