@@ -16,6 +16,7 @@ const pageData = {
 	'/quizbuilder': {
 		title: 'Quizbuilder'
 	},
+
 };
 
 export { routes, pageData };
