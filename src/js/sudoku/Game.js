@@ -7,7 +7,7 @@ import loadouts from "./loadouts";
  class Game {
     constructor(difficulty) {
         const difficultyNumber = {
-            easy: 90,
+            easy: 60,
             medium: 50,
             hard: 35,
         };

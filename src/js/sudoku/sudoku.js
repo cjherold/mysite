@@ -95,6 +95,6 @@ function tileClickFunctionality() {
 				left: `${xOffset}px`,
 			});
 		}
-		$('#picker-wheel').removeClass('d-none').show(100);
+		$('#picker-wheel').removeClass('d-none').show();
 	};
 }
