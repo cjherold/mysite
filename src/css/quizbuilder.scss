@@ -1,21 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
 .blue-text {
-    color: #505091;
-    background-color: #fff;
-  }
-  
-  body {
-    background-color: #1c5e81;
-  }
-  
-  #quiz-name {
-    color: #fff;
-  }
-  
-  #quiz-container {
-    max-width: 700px;
-    background-color: #fff;
-  }
-  
-  .message-area {
-    min-height: 100px;
-  }
+	color: #505091;
+	background-color: #fff;
+}
+
+body {
+	background-color: #1c5e81;
+}
+
+#quiz-name {
+	color: #fff;
+}
+
+#quiz-container {
+	max-width: 700px;
+	background-color: #fff;
+}
+
+.message-area {
+	min-height: 100px;
+}
+.cust-font {
+	font-family: 'Rancho', cursive;
+}
+.link-text {
+	font-size: 140%;
+}
