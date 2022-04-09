@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Build a quiz using a simple javascript object."/>
+    <meta name="keywords" content="chris herold, resume cjherold, christopher herold, web developer, quizbuilder, quiz"/>
+    <meta name="author" content="Chris Herold"/>
+    <link rel="icon" type="image/png" href="./assets/icons/chrisicon32.png">
+
+
+    <title>{{title}}</title>
+
+    <script type="module" src="./js/_styles/style-mailcall.js"></script>
+</head>
+<body>
+
+    {{> navbar}}
+
+
+    <h1 id="main-title" class="text-center cust-font p-3 my-3">Mailcall</h1>
+
+    <div id="form-container" class="container bg-light rounded p-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3 class="p-3 cust-font">Fill the form to create your mailto</h3>
+            </div>
+        </div>
+
+        <div class="row px-3">
+            <div class="col-lg-6 col-12 p-3">
+                <div class="col-12 input-group mb-2">
+                    <span class="input-group-text" id="">To</span>
+                    <input type="text" class="form-control" placeholder="SomebodyMcPerson@email.com">
+                </div>
+                <div class="col-12 input-group mb-2">
+                    <span class="input-group-text" id="">From</span>
+                    <input type="text" class="form-control" placeholder="SomeSender@email.com">
+                </div>
+                <div class="col-12 input-group mb-2">
+                    <span class="input-group-text" id="">Subject</span>
+                    <input type="text" class="form-control" placeholder="About that one thing">
+                </div>
+
+                <div class="col-12 input-group mb-3">
+                    <span class="input-group-text" id="">CC</span>
+                    <input type="text" class="form-control" placeholder="easedropper@email.com">
+                </div>
+                <div class="col-12 input-group mb-2">
+                    <span class="input-group-text" id="">Body</span>
+                    <textarea type="text" class="form-control" rows="6" placeholder="Hello!"></textarea>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-12 p-3">
+                <div class="col-12 m-0">
+                    <div class="col-12 input-group mb-2 d-flex">
+                        <label for="" class="preview-label">To:</label>
+                        <input class="form-control preview-form-control" type="text" placeholder="SomebodyMcPerson@email.com">
+                    </div>
+                </div>
+                <div class="col-12 m-0">
+                    <div class="col-12 input-group mb-2 d-flex">
+                        <label for="" class="preview-label">From:</label>
+                        <input class="form-control preview-form-control" type="text" placeholder="SomeSender@email.com">
+                    </div>
+                </div>
+                <div class="col-12 m-0">
+                    <div class="col-12 input-group mb-2 d-flex">
+                        <label for="" class="preview-label">Subject:</label>
+                        <input class="form-control preview-form-control" type="text" placeholder="About that one thing">
+                    </div>
+                </div>
+                <div class="col-12 m-0">
+                    <div class="col-12 input-group mb-3 d-flex">
+                        <label for="" class="preview-label">CC:</label>
+                        <input class="form-control preview-form-control" type="text" placeholder="easedropper@email.com">
+                    </div>
+                </div>
+                <div class="col-12 m-0">
+                    <div class="col-12 input-group mb-1 d-flex">
+                        <textarea class="form-control" name="" id="" cols="30" rows="6" placeholder="Hello!"></textarea>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="row px-3">
+            <div class="col-2">
+                <a href="mailto:email@example.com?from=SomeSender@email.com&subject=About%20that%20one%20thing&cc=easedropper@email.com&body=Hello!" class="btn btn-outline-primary me-2 col-12 mb-1"><i class="bi bi-envelope me-1"></i>Try</a>
+                <button href="mailto:email@example.com" class="btn btn-outline-primary me-2 col-12"><i class="bi bi-clipboard me-1"></i>Copy</button>
+            </div>
+            <div class="col-10">
+                <textarea id="output-area" class="form-control" rows="3">mailto:email@example.com?from=SomeSender@email.com&subject=About%20that%20one%20thing&cc=easedropper@email.com&body=Hello!</textarea>
+            </div>
+
+        </div>
+    </div>
+
+    <script defer type="module" src="./js/mailcall/mailcall.js"></script>
+
+</body>
+</html>

@@ -4,6 +4,7 @@ const routes = {
 	main: resolve('/index.html'),
 	sudoku: resolve('/sudoku.html'),
 	quizbuilder: resolve('/quizbuilder.html'),
+	mailcall: resolve('/mailcall.html'),
 };
 
 const pageData = {
@@ -15,6 +16,9 @@ const pageData = {
 	},
 	'/quizbuilder': {
 		title: 'Quizbuilder'
+	},
+	'/mailcall': {
+		title: 'Mailcall'
 	},
 
 };
