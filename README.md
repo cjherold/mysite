@@ -1,4 +1,13 @@
-# My Personal Website
-* updates coming soon
+# This is a readme
 
-### A website I made for fun
+
+### Bootstrap Icons
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
+routes
+
+    // import { useParams, Navigate, useNavigate, useLocation } from 'react-router-dom';
+    // const params = useParams();
+    // const navigate = useNavigate();
+    // const { pathname } = useLocation();
+

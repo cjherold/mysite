@@ -1,0 +1,82 @@
+@import './common.scss';
+
+.dark-theme {
+    body {
+        background-color: $dark-background;
+    }
+    .navbar {
+        .navbar-brand {
+            color: rgb(221, 221, 221);
+        }
+        .nav-link {
+            color: rgb(221, 221, 221);
+        }
+    }
+    .coloring-book-container {
+        filter: brightness($brightness-multiplier);
+        background-color: $dark-cb-container-background;
+	    border: $cb-container-border;
+
+        img {
+            border: $cb-container-border;
+            filter: brightness(70%);
+        }
+        .title {
+            -webkit-text-stroke: $cb-container-stroke;
+            -webkit-text-fill-color: #fff;
+        }
+    }
+    .coloring-book {
+        -webkit-text-stroke: $cb-stroke;
+	    -webkit-text-fill-color: $cb-fill;
+        filter: brightness($brightness-multiplier);
+    }
+    .coloring-book-subtext {
+        color: $cb-subtext;
+    }
+
+    .coloring-book-tiles {
+        .text-section {
+            border: $ts-border;
+            background-color: $dark-ts-background;
+            color: $ts-color;
+            div {
+                .title {
+                    -webkit-text-stroke: $ts-stroke;
+                    -webkit-text-fill-color: $ts-fill;
+                }
+
+                button {
+                    border: $ts-button-border;
+                    background-color: $ts-button;
+                    color: $ts-button-color;
+                    &:hover {
+                        box-shadow: $shadow-color;
+                    }
+                }
+            }
+        }
+    }
+
+
+    #comp-skills {
+        background-color: $dark-cb-container-background;
+        filter: brightness($brightness-multiplier);
+        .row {
+            .icon-div {
+                // background-color: $dark-cb-container-background;
+                // filter: brightness(100%);
+                img {
+                    filter: brightness(65%);
+                }
+            }
+        }
+    }
+
+    #comp-footer {
+	    a {
+            color: #fff;
+        }
+    }
+
+}

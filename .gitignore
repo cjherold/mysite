@@ -1,9 +1,11 @@
 
 
 node_modules
-src/assets/img
+build
 _notes
 .env
 .vscode
 .vscode-test
 .DS_Store
+spark-build
+

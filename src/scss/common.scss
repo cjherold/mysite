@@ -1,0 +1,25 @@
+// Default theme
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+$custom-font: 'Patua One', cursive;
+$cb-stroke: 2px rgb(13, 97, 149);
+$cb-fill: rgba(13, 97, 149, 0.495);
+$cb-subtext: rgb(13, 97, 149);
+$cb-container-background: #37a84481;
+$cb-container-border: solid 1px#37a844;
+$cb-container-stroke: 2px #37a844;
+$ts-border: solid 1px #c5c8f6;
+$ts-background: #c5c8f64f;
+$ts-color: #333;
+$ts-stroke: 2px rgb(36, 97, 132);
+$ts-fill: #fff;
+$ts-button-border: solid 2px #37a844;
+$ts-button: #37a844d1;
+$ts-button-color: #fff;
+$shadow-color: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+
+// Dark theme
+$brightness-multiplier: 160%;
+$dark-background: #333;
+$ts-border: solid 1px #79b3ee9d;
+$dark-ts-background: #79b4eedb;
+$dark-cb-container-background: #37a84492;
