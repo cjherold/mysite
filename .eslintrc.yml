@@ -3,11 +3,11 @@
 
 extends:
     - airbnb-base
-    - prettier
+    # - prettier
 
 plugins:
     - import
-    - prettier
+    # - prettier
 
 env:
     es2021: true
@@ -22,6 +22,8 @@ parserOptions:
 
 # individual eslint rules can be enables/disabled
 rules:
+    no-tabs: 0
+
     no-unused-vars:
         - warn
 

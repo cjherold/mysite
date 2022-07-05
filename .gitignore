@@ -1,11 +1,11 @@
 
+_notes
+build
+spark-build
 
 node_modules
-build
-_notes
 .env
 .vscode
 .vscode-test
 .DS_Store
-spark-build
 
