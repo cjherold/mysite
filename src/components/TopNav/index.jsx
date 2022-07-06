@@ -14,7 +14,8 @@ function TopNav() {
 
 				<Navbar.Collapse id='basic-navbar-nav'>
 					<Nav className='ms-auto me-3'>
-						<Nav.Link href='/contact'>Contact</Nav.Link>
+						<Nav.Link href='/quizbuilder'>Quizbuilder</Nav.Link>
+						<Nav.Link href='/mailcall'>Mailcall</Nav.Link>
 						<Nav.Link href='/sudoku'>Sudoku</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>

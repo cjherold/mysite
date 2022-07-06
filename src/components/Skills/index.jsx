@@ -10,12 +10,12 @@ function Skills() {
             <Container id='comp-skills'>
                 <Row>
                     <div className="col-12">
-                        <h3 className="title p-3">
-                            Skills
+                        <h3 className="title p-3 text-center">
+                            Favorite Tech
                         </h3>
                     </div>
                 </Row>
-                <Row className='justify-content-around'>
+                <Row className='justify-content-around skills-row mx-auto'>
                     {
                         iconsList.map((icon, index) => {
                             return (

@@ -5,7 +5,8 @@ import TopNav from './TopNav';
 import Puzzle from './Puzzle';
 import Skills from './Skills';
 import Footer from './Footer';
-
+import MailtoBuilder from './MailtoBuilder';
+import QuizApp from './QuizApp';
 
 export {
     About,
@@ -14,5 +15,7 @@ export {
     TopNav,
     Puzzle,
     Skills,
-    Footer
-}
+    Footer,
+    MailtoBuilder,
+    QuizApp
+};
