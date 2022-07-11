@@ -1,7 +1,11 @@
 import { Row } from 'react-bootstrap';
 
 function ProjectsTile() {
-    const projectsText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus incidunt ratione distinctio labore, explicabo cupiditate. Error cumque animi rem eum dicta voluptatem soluta inventore beatae blanditiis ipsum omnis, assumenda eveniet!';
+    const projectsText = `
+		A few of my projects are just tied into my website. I have a sudoku game, mailto link builder, and a simple quiz so far. On Github I have a few different projects in the works. Spark is a really cool and simple website builder using Vite. Runway is a more complex website builder that is more focused on server side possiblities. Quick-Stash is a fast way to get a database up and running using Docker. It's great for fun projects. I'm rebuilding my personal site using React right now and I'm sure to add more so keep an eye on things.
+	`;
+
+	const imagePath = './assets/img/spark.png';
 
 	return (
 		<Row>
@@ -11,11 +15,11 @@ function ProjectsTile() {
 					<p>
                         {projectsText}
 					</p>
-					<button className='btn'>Click Here</button>
+					<a href="./sudoku" className='btn'>Try Sudoku</a>
 				</div>
 			</div>
-			<div className='col-md-5 col-12 d-flex p-4 img-section'>
-				<img className='m-auto' src='./assets/img/wsu-logo300x250.png' alt='main' />
+			<div className='col-md-5 col-12 d-flex p-4 img-section project-image'>
+				<img className='m-auto' src={imagePath} alt='main' />
 			</div>
 			<div className='col-md-7 col-12 d-md-none d-flex text-section'>
 				<div className=''>
@@ -23,7 +27,7 @@ function ProjectsTile() {
 					<p>
 						{projectsText}
 					</p>
-					<button className='btn'>Click Here</button>
+					<a href="./sudoku" className='btn'>Try Sudoku</a>
 				</div>
 			</div>
 		</Row>

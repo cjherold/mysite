@@ -6,7 +6,7 @@ function MainIntro() {
 		<>
 			<Container id='comp-mainintro' fluid>
 				<Row>
-					<div className='col-md-5 col-12 d-flex'>
+					<div className='col-md-5 col-12 d-flex ps-lg-5'>
 						<div className='m-auto col-12'>
 							<h1 className='m-auto coloring-book col-12'>Christopher Herold</h1>
 							<p className='coloring-book-subtext col-12'>Web Developer</p>

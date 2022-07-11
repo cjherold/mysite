@@ -44,6 +44,9 @@ html {
 			max-width: 100%;
 		}
 	}
+	.project-image {
+		background-color: #222;
+	}
 	.text-section {
 		min-height: 300px;
 		border: $ts-border;
@@ -60,7 +63,7 @@ html {
 			p {
 				font-size: 16px;
 			}
-			button {
+			.btn {
 				border: $ts-button-border;
 				background-color: $ts-button;
 				color: $ts-button-color;
@@ -150,6 +153,7 @@ html {
             margin: 0;
             display: flex;
 			margin: 30px;
+			max-width: 120px;
 			border: $cb-container-border;
 			background-color: $cb-container-background;
 			// border-radius: 20%;
@@ -164,6 +168,7 @@ html {
                 // width: 200px;
                 // height: 200px;
                 width: 100%;
+				max-width: 100px;
                 height: auto;
             }
         }
@@ -191,10 +196,20 @@ html {
 		text-decoration: none;
 		color: #333;
 		padding: 5px 20px;
+		font-size: 20px;
 		// border-radius: 5%;
-		// &:hover {
+		&:hover {
+			border-radius: 10px;
+			border: solid 1px $cb-fill;
+			// box-shadow: $shadow-color;
+		}
+	}
+}
 
-		// }
+#comp-mailto {
+	.mailto-container {
+		max-width: 700px;
+		background-color: #333;
 	}
 }
 

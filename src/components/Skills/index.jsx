@@ -11,7 +11,7 @@ function Skills() {
                 <Row>
                     <div className="col-12">
                         <h3 className="title p-3 text-center">
-                            Favorite Tech
+                            Some Tech Favorites
                         </h3>
                     </div>
                 </Row>

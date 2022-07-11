@@ -4,6 +4,11 @@ import { Container, Row } from "react-bootstrap";
 
 
 function About() {
+
+	const aboutText = `
+		Hi, my name is Chris and I'm a web developer. It took me a while to discover progamming. I started with a few different majors while studying in Minnesota, France, Kansas and Florida. Then I just took some time away from school to work, and figure out what I wanted to do with my life. While working as a CNC operator, I was able to see how code was run line by line and something just clicked for me. I bought a Java textbook, taught myself how to code, and was instantly hooked. Then I signed up for the Computer Science program at the nearest school. Now I get to play with computers and build websites for huge companies. It's awesome!
+	`;
+
 	return (
 		<>
 			<Container fluid id='comp-about' className='coloring-book-container'>
@@ -13,15 +18,7 @@ function About() {
 							<div className='m-auto col-lg-12 col-10 p-3'>
 								<h3 className='col-12 title'>About</h3>
 								<p>
-									Hi, my name is Chris and I'm a web developer. I sort of took the
-									long way around when finding my major. Although I was always
-									interested in technology and good with computers, I just considered
-									them something that was more fun than work. I met a few people that
-									worked as programmers but they always gave some vague explanation of
-									what their job was. It wasn't until I worked on a CNC that I saw how
-									a program actually ran. I knew I finally found what I wanted to do.
-									I enrolled in a local college and started teaching myself how to
-									code. Now I'm in a career that lets me have fun with computers.
+									{aboutText}
 								</p>
 
 							</div>

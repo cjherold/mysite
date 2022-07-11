@@ -1,7 +1,7 @@
 import { Container } from 'react-bootstrap';
 import EducationTile from './EducationTile';
 import ProjectsTile from './ProjectsTile';
-import GoalsTile from './GoalsTile';
+// import GoalsTile from './GoalsTile';
 
 function InfoTiles() {
 	return (
@@ -9,7 +9,7 @@ function InfoTiles() {
 			<Container className='coloring-book-tiles'>
 				<EducationTile/>
 				<ProjectsTile/>
-				<GoalsTile/>
+				{/* <GoalsTile/> */}
 			</Container>
 		</>
 	);
