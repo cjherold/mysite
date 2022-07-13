@@ -1,101 +1,134 @@
-import main from './mailtobuilder';
+import './style.scss';
+import * as toast from 'izitoast';
+import { useEffect, useState } from 'react';
+import { Container, Row, Button } from 'react-bootstrap';
+
+
 
 function MailtoBuilder() {
+	const [toField, setToField] = useState('');
+	const [fromField, setFromField] = useState('');
+	const [ccField, setCCField] = useState('');
+	const [subField, setSubField] = useState('');
+	const [bodyField, setBodyField] = useState('');
+	const [mailto, setMailto] = useState('');
+
+
+	const updateToField = (e) => setToField(e.target.value);
+	const updateFromField = (e) => setFromField(e.target.value);
+	const updateCCField = (e) => setCCField(e.target.value);
+	const updateSubField = (e) => setSubField(e.target.value);
+	const updateBodyField = (e) => setBodyField(e.target.value);
+
+	useEffect(() => {
+		const mailto = `mailto:${toField}?from=${fromField}&subject=${encodeURIComponent(subField)}&cc=${ccField}&body=${encodeURIComponent(bodyField)}`;
+		setMailto(mailto);
+	}, [toField, fromField, ccField, subField, bodyField, mailto]);
+
+	const addToClipBoard = () => {
+		navigator.clipboard.writeText(mailto);
+		toast.success({
+			timeout: 1500,
+			position: 'topRight',
+			message: 'Copied to clipboard',
+		});
+	};
+
+
     return (
 		<div id='comp-mailto'>
-			<div id='form-container' class='container bg-light rounded p-3 shadow mailto-container'>
-				<div class='row'>
-					<div class='col-12 text-center'>
-						<h3 class='p-3 cust-font'>Fill the form to create your mailto</h3>
+			<Container className='coloring-book-container rounded p-4 shadow mailto-container mt-3 mb-5'>
+				<Row>
+					{/* TO  */}
+					<div className='input-group col-12 mb-2'>
+						<span className='input-group-text'>To</span>
+						<input
+							type='email'
+							className='form-control'
+							onInput={updateToField}
+							value={toField}
+							placeholder='SomebodyMcPerson@gmail.com'
+						/>
 					</div>
-				</div>
 
-				<div class='row px-3'>
-					<div class='col-12 p-3'>
-						<div class='col-12 input-group mb-2'>
-							<span class='input-group-text'>To</span>
-							<input
-								id='to-field'
-								type='text'
-								class='form-control form-field'
-								placeholder='SomebodyMcPerson@gmail.com'
-							/>
-						</div>
-						<div class='col-12 input-group mb-2'>
-							<span class='input-group-text' id=''>
-								From
-							</span>
-							<input
-								id='from-field'
-								type='text'
-								class='form-control form-field'
-								placeholder='SomeSender@gmail.com'
-							/>
-						</div>
-						<div class='col-12 input-group mb-2'>
-							<span class='input-group-text' id=''>
-								Subject
-							</span>
-							<input
-								id='subject-field'
-								type='text'
-								class='form-control form-field'
-								placeholder='About that one thing'
-							/>
-						</div>
+					{/* FROM  */}
+					<div className='input-group col-12 mb-2'>
+						<span className='input-group-text'>From</span>
+						<input
+							type='email'
+							className='form-control'
+							onInput={updateFromField}
+							value={fromField}
+							placeholder='SomeSender@gmail.com'
+						/>
+					</div>
 
-						<div class='col-12 input-group mb-3'>
-							<span class='input-group-text' id=''>
-								CC
-							</span>
-							<input
-								id='cc-field'
-								type='text'
-								class='form-control form-field'
-								placeholder='eavesdropper@gmail.com'
-							/>
-						</div>
-						<div class='col-12 input-group mb-2'>
-							<span class='input-group-text' id=''>
-								Body
-							</span>
-							<textarea
-								id='body-field'
-								type='text'
-								class='form-control form-field'
-								rows='6'
-								placeholder='Hello!'
-							></textarea>
+					{/* CC  */}
+					<div className='input-group col-12 mb-2'>
+						<span className='input-group-text'>CC</span>
+						<input
+							type='email'
+							className='form-control'
+							onInput={updateCCField}
+							value={ccField}
+							placeholder='eavesdropper@gmail.com'
+						/>
+					</div>
+
+					{/* SUBJECT  */}
+					<div className='input-group col-12 mb-2'>
+						<span className='input-group-text'>Subject</span>
+						<input
+							type='text'
+							className='form-control'
+							onInput={updateSubField}
+							value={subField}
+							placeholder='About that one thing'
+						/>
+					</div>
+
+					{/* BODY  */}
+					<div className='input-group col-12 mb-3'>
+						<span className='input-group-text'>Body</span>
+						<textarea
+							type='text'
+							className='form-control'
+							onInput={updateBodyField}
+							value={bodyField}
+							placeholder='Hello!'
+							rows='6'
+						></textarea>
+					</div>
+
+					{/* BUTTONS  */}
+					<div className='col-md-3 col-12 d-flex'>
+						<div className='col-12 m-auto'>
+							<Button href={mailto} className='btn col-12 mb-2 custom-primary-btn'>
+								<i className='bi bi-envelope me-2'></i> Try
+							</Button>
+							<Button
+								onClick={addToClipBoard}
+								className='btn col-12 mb-2 custom-primary-btn'
+							>
+								Copy
+							</Button>
 						</div>
 					</div>
-				</div>
 
-				<div class='row px-3'>
-					<div class='col-md-3 col-12  mb-md-0 mb-2'>
-						<a
-							id='try-button'
-							href='mailto:email@example.com?from=SomeSender@gmail.com&subject=About%20that%20one%20thing&cc=eavesdropper@gmail.com&body=Hello!'
-							class='btn btn-outline-primary me-2 col-12 mb-1'
-						>
-							<i class='bi bi-envelope me-1'></i>Try
-						</a>
-						<button
-							id='copy-button'
-							href='mailto:email@example.com'
-							class='btn btn-outline-primary me-2 col-12'
-						>
-							<i class='bi bi-clipboard me-1'></i>Copy
-						</button>
+					{/* OUTPUT  */}
+					<div className='col-md-9 col-12 d-flex'>
+						<textarea
+							id='output-area'
+							className='form-control my-auto bg-light'
+							name='output-area'
+							cols='30'
+							rows='4'
+							value={mailto}
+							readOnly
+						></textarea>
 					</div>
-					<div class='col-md-9 col-12'>
-						<textarea id='output-area' class='form-control' rows='3'>
-							mailto:email@example.com?from=SomeSender@gmail.com&subject=About%20that%20one%20thing&cc=eavesdropper@gmail.com&body=Hello!
-						</textarea>
-					</div>
-				</div>
-
-				<script src="./mailtobuilder.js"></script>
-			</div>
+				</Row>
+			</Container>
 		</div>
 	);
 }

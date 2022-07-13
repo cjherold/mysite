@@ -209,7 +209,30 @@ html {
 #comp-mailto {
 	.mailto-container {
 		max-width: 700px;
-		background-color: #333;
+		border: $ts-border;
+		background-color: $ts-background;
+		.input-group {
+			span {
+				background-color: $cb-container-background;
+				border: $cb-container-border;
+				min-width: 80px;
+			}
+		}
+		.custom-primary-btn {
+			background-color: $cb-fill;
+			// border: solid $cb-stroke;
+			// background-color: $ts-background;
+			// border: #fff;
+			color: #fff;
+			&:hover {
+				// box-shadow: $shadow-color;
+				background-color: $cb-container-background;
+
+			}
+		}
+		#output-area {
+			font-size: 14px;
+		}
 	}
 }
 

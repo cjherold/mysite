@@ -6,8 +6,8 @@ function EducationTile() {
 	`;
 	const imagePath = './assets/img/wsu-logo.png';
 
-    return (
-        <Row>
+	return (
+		<Row>
 			<div className='col-md-5 col-12 d-flex p-4 img-section bg-white'>
 				<img className='m-auto' src={imagePath} alt='main' />
 			</div>
@@ -15,11 +15,9 @@ function EducationTile() {
 				<div className=''>
 					<h3 className='title'>Education</h3>
 					<p>{educationText}</p>
-					{/* <button className='btn'>Click Here</button> */}
 				</div>
 			</div>
 		</Row>
-
 	);
 }
 
