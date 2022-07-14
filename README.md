@@ -16,3 +16,8 @@
 * Get all pages working
 * Clean up code and organize things more
 * Style dark/light mode and toggle switch?
+
+
+### Icons
+* 'react-icons'
+* 'bootstrap-icons'

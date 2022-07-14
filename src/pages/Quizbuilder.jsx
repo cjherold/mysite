@@ -1,9 +1,11 @@
 import { QuizApp } from '../components';
 import { Container, Row } from 'react-bootstrap';
+import Main from '../layouts/Main';
+
 
 function Quizbuilder({ isDark }) {
 	return (
-		<div className={isDark ? 'dark-theme' : ''}>
+		<Main>
 			<Container>
 				<Row>
 					<h1 id='main-title' className='text-center col-12 coloring-book'>
@@ -12,7 +14,8 @@ function Quizbuilder({ isDark }) {
 				</Row>
 			</Container>
 			<QuizApp />
-		</div>
+		</Main>
+
 	);
 }
 

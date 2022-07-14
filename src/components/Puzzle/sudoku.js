@@ -36,6 +36,7 @@ const main = () => {
 			const correct = $(id).data('correctanswer');
 			const guess = e.target.value;
 			$(id).html(guess);
+			// eslint-disable-next-line
 			if (correct == guess) {
 				$(id).data('correct', 1);
 				$(id).addClass('correct');

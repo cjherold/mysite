@@ -1,9 +1,9 @@
 import { Row } from 'react-bootstrap';
 
 function EducationTile() {
-	const educationText = `
-		I graduated in 2020 from Winona State University with a Bachelor's in Computer Science. I wouldn't recommend finishing school at the start of a global pandemic but sometimes things just happen. Some of my earlier studies include l\’Université Catholique de l\’Ouest, the University of Kansas, and the University of Tampa.
-	`;
+	// eslint-disable-next-line
+	const educationText = "I graduated in 2020 from Winona State University with a Bachelor's in Computer Science. I wouldn't recommend finishing school at the start of a global pandemic but sometimes things just happen. Some of my earlier studies include l\’Université Catholique de l\’Ouest, the University of Kansas, and the University of Tampa.";
+
 	const imagePath = './assets/img/wsu-logo.png';
 
 	return (
