@@ -1,5 +1,5 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
-import { Link } from 'react';
+import { Link } from 'react-router-dom';
 
 
 
@@ -10,13 +10,13 @@ function TopNav() {
 		>
 			{/* container fluid  */}
 			<Container fluid className='container-fluid'>
-				<Link to="/" className="navbar-brand">Home</Link>
+				<Link className="navbar-brand" to="/">Home</Link>
 				<Navbar.Toggle aria-controls='basic-navbar-nav' />
 
 				<Navbar.Collapse id='basic-navbar-nav'>
 					<Nav className='ms-auto me-3'>
-						<Link to="/mailcall" className="nav-link">Mailcall</Link>
-						<Link to="/sudoku" className="nav-link">Sudoku</Link>
+						<Link className="nav-link" to='/mailcall'>Mailcall</Link>
+						<Link className="nav-link" to='/sudoku'>Sudoku</Link>
 					</Nav>
 				</Navbar.Collapse>
 			</Container>
