@@ -1,4 +1,5 @@
 import { Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 function ProjectsTile() {
     const projectsText = `
@@ -15,7 +16,7 @@ function ProjectsTile() {
 					<p>
                         {projectsText}
 					</p>
-					<a href="./sudoku" className='btn'>Try Sudoku</a>
+					<Link to="/sudoku" className="btn">Try Sudoku</Link>
 				</div>
 			</div>
 			<div className='col-md-5 col-12 d-flex p-4 img-section project-image'>
@@ -27,7 +28,7 @@ function ProjectsTile() {
 					<p>
 						{projectsText}
 					</p>
-					<a href="./sudoku" className='btn'>Try Sudoku</a>
+					<Link to="/sudoku" className="btn">Try Sudoku</Link>
 				</div>
 			</div>
 		</Row>
