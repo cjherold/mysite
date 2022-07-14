@@ -7,8 +7,9 @@ import { Home, Sudoku, Mailcall, Error404 } from './pages';
 
 
 function App() {
+    const basename = 'https://www.cjherold.com';
     return (
-        <Router>
+        <Router basename={basename}>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/mailcall" element={<Mailcall  />} />
