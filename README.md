@@ -13,7 +13,8 @@
 
 
 # TODO
-* Get all pages working
+* Move all the code into this project and get all pages working
+* Once things work, convert them to react-style
 * Clean up code and organize things more
 * Style dark/light mode and toggle switch?
 
@@ -21,3 +22,22 @@
 ### Icons
 * 'react-icons'
 * 'bootstrap-icons'
+
+### Github Pages Fix
+###### For some reason React Routes don't play nice with Github Pages (something about acessing the browser's history). To get around this you can use HashRouter in place of BrowserRouter. I also tried setting the homepage in the package.json but that didn't seem to work.
+```jsx
+// here is an example of App.jsx using HashRouter
+import { Routes, Route, HashRouter } from 'react-router-dom';
+
+export default function App() {
+    return (
+        // using HashRouter where BrowserRouter would be
+        <HashRouter basename='/'>
+            <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route exact path="*" element={<Error404 />} />
+            </Routes>
+        </HashRouter>
+    )
+}
+```

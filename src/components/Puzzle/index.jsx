@@ -14,7 +14,7 @@ function Puzzle() {
 					<div className="d-flex col-12 justify-content-center">
 						<div className="d-flex">
 							<label className="text-center" htmlFor="easy">Easy</label>
-							<input id="easy" className="my-1 mx-3" type="radio" name="difficulty" value="easy" onChange={(e) => e.target.checked = true} />
+							<input id="easy" className="my-1 mx-3" type="radio" name="difficulty" value="easy" onChange={(e) => e.target.checked = true} checked="checked"/>
 						</div>
 						<div className="mx-3 d-flex">
 							<label htmlFor="medium">Medium</label>

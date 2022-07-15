@@ -6,7 +6,7 @@ import { Container, Row } from "react-bootstrap";
 function About() {
 
 	const aboutText = `
-		Hi, my name is Chris and I'm a web developer. It took me a while to discover programming. I started with a few different majors while studying in Minnesota, France, Kansas, and Florida. Then I just took some time away from school to work, and figure out what I wanted to do with my life. While working as a CNC operator, I saw how code was run line by line and it just clicked for me. I bought a Java textbook, taught myself how to code, and I was instantly hooked. Then I signed up for the Computer Science program at the nearest school. Now I get to play with computers and build websites for huge companies. It's awesome!
+		Hi, my name's Chris. I'm the one on the right and the adorable puppy above is my best friend Daisy. It took me a while to discover programming. I started with a few different majors while studying in Minnesota, France, Kansas, and Florida. Then I just took some time away from school to work, and figure out what I wanted to do with my life. While working as a CNC operator, I saw how code was run line by line and it just clicked for me. I bought a Java textbook, taught myself how to code, and I was instantly hooked. Then I signed up for the Computer Science program at the nearest school. Now I get to play with computers and build websites for huge companies. It's awesome!
 	`;
 
 	return (

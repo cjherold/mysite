@@ -110,6 +110,7 @@ function MailtoBuilder() {
 								onClick={addToClipBoard}
 								className='btn col-12 mb-2 custom-primary-btn'
 							>
+								<i class='bi bi-clipboard me-2'></i>
 								Copy
 							</Button>
 						</div>
