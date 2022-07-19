@@ -2,7 +2,6 @@
 
 const iconsList = [
     './assets/icons/css30.svg',
-    './assets/icons/gulp30.svg',
     './assets/icons/html30.svg',
     './assets/icons/js30.svg',
     './assets/icons/node30.svg',
@@ -16,8 +15,11 @@ const iconsList = [
     './assets/icons/mongo30.svg',
     './assets/icons/vscode30.svg',
     './assets/icons/github30.svg',
-    './assets/icons/vite30.svg'
-
+    './assets/icons/vite30.svg',
+    './assets/icons/docker30.svg',
+    './assets/icons/bootstrap30.svg',
+    './assets/icons/figma30.svg',
+    './assets/icons/ubuntu30.svg',
 
 ];
 
