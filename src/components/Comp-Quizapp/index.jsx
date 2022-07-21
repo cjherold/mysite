@@ -1,7 +1,7 @@
 
 
 
-function QuizApp() {
+export default function QuizApp() {
     return (
         <div id="comp-quizapp">
             <div id="quiz-container" className="container rounded border mb-5 shadow">
@@ -73,5 +73,3 @@ function QuizApp() {
         </div>
     )
 }
-
-export default QuizApp;

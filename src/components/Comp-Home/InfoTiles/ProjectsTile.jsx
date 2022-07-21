@@ -1,7 +1,7 @@
 import { Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-function ProjectsTile() {
+export default function ProjectsTile() {
     const projectsText = `
 		A few of my projects are just tied into my website. I have a sudoku game, mailto link builder, and soon I'll have my quiz page. On Github I have a few different projects in the works. Spark is a really cool and simple website builder using Vite. Runway is a more complex website builder that is more focused on server side possiblities. Quick-Stash is a fast way to get a database up and running using Docker. It's great for fun projects. I'm rebuilding my personal site using React right now and I'm sure to add more so keep an eye on things.
 	`;
@@ -34,5 +34,3 @@ function ProjectsTile() {
 		</Row>
 	);
 }
-
-export default ProjectsTile;

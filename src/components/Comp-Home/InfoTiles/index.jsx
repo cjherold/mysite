@@ -3,7 +3,7 @@ import EducationTile from './EducationTile';
 import ProjectsTile from './ProjectsTile';
 // import GoalsTile from './GoalsTile';
 
-function InfoTiles() {
+export default function InfoTiles() {
 	return (
 		<>
 			<Container className='coloring-book-tiles'>
@@ -14,5 +14,3 @@ function InfoTiles() {
 		</>
 	);
 }
-
-export default InfoTiles;

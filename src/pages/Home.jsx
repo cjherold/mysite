@@ -4,7 +4,7 @@ import Main from '../layouts/Main';
 import { MainIntro, About, InfoTiles, Skills } from '../components';
 
 
-function Home() {
+export default function Home() {
 
     return (
         <Main>
@@ -15,6 +15,3 @@ function Home() {
         </Main>
     )
 }
-
-
-export default Home;

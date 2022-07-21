@@ -4,9 +4,7 @@ import { Routes, Route, HashRouter } from 'react-router-dom';
 import { Home, Sudoku, Mailcall, Error404 } from './pages';
 
 
-
-
-function App() {
+export default function App() {
     return (
         <HashRouter basename='/'>
             <Routes>
@@ -18,7 +16,3 @@ function App() {
         </HashRouter>
     )
 }
-
-
-
-export default App;

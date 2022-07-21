@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 
 
-function TopNav() {
+export default function TopNav() {
 	return (
 		<Navbar
 			expand='md'
@@ -23,5 +23,3 @@ function TopNav() {
 		</Navbar>
 	);
 }
-
-export default TopNav;

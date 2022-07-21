@@ -3,7 +3,7 @@ import { MailtoBuilder } from '../components';
 import Main from '../layouts/Main';
 
 
-function Mailcall({ isDark }) {
+export default function Mailcall({ isDark }) {
 	return (
 		<Main>
 			<Container>
@@ -17,5 +17,3 @@ function Mailcall({ isDark }) {
 		</Main>
 	);
 }
-
-export default Mailcall;

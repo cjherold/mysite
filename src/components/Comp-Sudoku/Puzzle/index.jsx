@@ -20,8 +20,6 @@ export default function Puzzle() {
 				}, 200)
 			}
 		</div>
-
-
 	);
 }
 

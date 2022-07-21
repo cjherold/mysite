@@ -5,7 +5,7 @@ import { Container, Row, Button } from 'react-bootstrap';
 
 
 
-function MailtoBuilder() {
+export default function MailtoBuilder() {
 	const [toField, setToField] = useState('');
 	const [fromField, setFromField] = useState('');
 	const [ccField, setCCField] = useState('');
@@ -133,5 +133,3 @@ function MailtoBuilder() {
 		</div>
 	);
 }
-
-export default MailtoBuilder;

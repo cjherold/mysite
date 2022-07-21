@@ -4,7 +4,7 @@ import { Container, Row } from 'react-bootstrap';
 import Main from '../layouts/Main';
 
 
-function Sudoku({ isDark }) {
+export default function Sudoku({ isDark }) {
 	return (
 		<Main>
 			<Container>
@@ -16,5 +16,3 @@ function Sudoku({ isDark }) {
 		</Main>
 	);
 }
-
-export default Sudoku;

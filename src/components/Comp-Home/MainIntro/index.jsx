@@ -1,7 +1,7 @@
 // import './style.scss';
 import { Container, Row } from 'react-bootstrap';
 
-function MainIntro() {
+export default function MainIntro() {
 	return (
 		<>
 			<Container id='comp-mainintro' fluid>
@@ -25,5 +25,3 @@ function MainIntro() {
 		</>
 	);
 }
-
-export default MainIntro;

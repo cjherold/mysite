@@ -1,6 +1,6 @@
 import { Row } from 'react-bootstrap';
 
-function GoalsTile() {
+export default function GoalsTile() {
 	const goalsText = `
 		Here
 	`;
@@ -22,5 +22,3 @@ function GoalsTile() {
 		</Row>
 	);
 }
-
-export default GoalsTile;

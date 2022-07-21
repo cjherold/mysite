@@ -2,7 +2,7 @@ import { Container, Row } from 'react-bootstrap';
 import Main from '../../layouts/Main';
 
 
-function Error404() {
+export default function Error404() {
     return (
         <Main>
             <Container style={{marginTop: '25%', marginBottom: '25%'}}>
@@ -16,5 +16,3 @@ function Error404() {
         </Main>
     )
 }
-
-export default Error404;

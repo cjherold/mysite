@@ -4,7 +4,7 @@ import { Container, Row } from 'react-bootstrap';
 import iconsList from './icons-list';
 
 
-function Skills() {
+export default function Skills() {
 	return (
         <>
             <Container id='comp-skills'>
@@ -30,5 +30,3 @@ function Skills() {
         </>
 	);
 }
-
-export default Skills;
