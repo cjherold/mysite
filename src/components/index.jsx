@@ -1,12 +1,12 @@
-import About from './About';
-import MainIntro from './MainIntro';
-import InfoTiles from './InfoTiles';
+import About from './Comp-Home/About';
+import MainIntro from './Comp-Home/MainIntro';
+import InfoTiles from './Comp-Home/InfoTiles';
 import TopNav from './TopNav';
-import Puzzle from './Puzzle';
-import Skills from './Skills';
+import Puzzle from './Comp-Sudoku/Puzzle';
+import Skills from './Comp-Home/Skills';
 import Footer from './Footer';
-import MailtoBuilder from './MailtoBuilder';
-import QuizApp from './QuizApp';
+import MailtoBuilder from './Comp-Mailcall';
+import QuizApp from './Comp-Quizapp';
 
 export {
     About,

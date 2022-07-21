@@ -32,7 +32,7 @@ const main = () => {
 	function pickerWheelFunctionality() {
 		// Selecting a number from the wheel
 		$('.num-btn').on('click', function (e) {
-			const id = `#${$('#picker-wheel').attr('data-tilenumber')}`;
+			const id = `#${$('#comp-pickerwheel').attr('data-tilenumber')}`;
 			const correct = $(id).data('correctanswer');
 			const guess = e.target.value;
 			$(id).html(guess);
@@ -49,13 +49,13 @@ const main = () => {
 				$(id).data('correct', 0);
 				$(id).removeClass('correct');
 			}
-			$('#picker-wheel').hide();
+			$('#comp-pickerwheel').hide();
 		});
 
 		// Close wheel button
 		$('#close-wheel-btn').on('click', function () {
-			$('#picker-wheel').attr('data-tilenumber', '');
-			$('#picker-wheel').hide();
+			$('#comp-pickerwheel').attr('data-tilenumber', '');
+			$('#comp-pickerwheel').hide();
 		});
 	}
 
@@ -82,22 +82,22 @@ const main = () => {
 		// Show wheel
 		const spawnPickerWheel = ({ x, y, currentTile }) => {
 			const id = currentTile.id;
-			$('#picker-wheel').attr('data-tilenumber', id);
+			$('#comp-pickerwheel').attr('data-tilenumber', id);
 
 			if (window.innerWidth > 700) {
-				$('#picker-wheel').css({
+				$('#comp-pickerwheel').css({
 					top: y - 130,
 					left: x - 130,
 				});
 			} else {
 				const xOffset = window.innerWidth / 2 - 125;
 				const yOffset = window.innerHeight / 2 - 125;
-				$('#picker-wheel').css({
+				$('#comp-pickerwheel').css({
 					bottom: `${yOffset}px`,
 					left: `${xOffset}px`,
 				});
 			}
-			$('#picker-wheel').removeClass('d-none').show();
+			$('#comp-pickerwheel').removeClass('d-none').show();
 		};
 	}
 }
