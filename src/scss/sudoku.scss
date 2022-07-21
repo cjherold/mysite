@@ -22,13 +22,26 @@ body {
       color: #d7f724 !important;
     }
 
-    #new-game {
+    .difficulty-btn {
+      // background-color: $cb-container-background;
+      // border: $cb-container-border;
       background-color: $cb-fill;
       border: solid $cb-stroke;
       &:hover {
         box-shadow: $shadow-color;
       }
     }
+    #new-game-title {
+      color: #333;
+    }
+
+    // #new-game {
+    //   background-color: $cb-fill;
+    //   border: solid $cb-stroke;
+    //   &:hover {
+    //     box-shadow: $shadow-color;
+    //   }
+    // }
     label {
       color: #333;
     }

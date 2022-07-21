@@ -16,9 +16,10 @@ const main = () => {
 	/**
 	 *  New game clicked
 	 */
-	$('#new-game').on('click', function () {
+	$('.difficulty-btn').on('click', function (e) {
+		const difficulty = e.target.value || 'easy';
+		console.log('got: ', e.target.value);
 		$('#main-title').html('Sudoku').removeClass('winner');
-		const difficulty = $('input[name=difficulty]:checked').val();
 		game = new Game(difficulty);
 		$('#puzzle-container').html('');
 		$('#puzzle-container').append(game.initialize());
