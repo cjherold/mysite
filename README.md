@@ -41,3 +41,30 @@ export default function App() {
     )
 }
 ```
+
+
+### My .vscode/extensions.json
+```json
+{
+    "recommendations": [
+        "bierner.markdown-preview-github-styles",
+        "christian-kohler.path-intellisense",
+        "dbaeumer.vscode-eslint",
+        "eamodio.gitlens",
+        "esbenp.prettier-vscode",
+        "formulahendry.code-runner",
+        "GrapeCity.gc-excelviewer",
+        "rangav.vscode-thunder-client",
+        "tomoki1207.pdf",
+        "dsznajder.es7-react-js-snippets",
+        "kisstkondoros.vscode-gutter-preview",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.jupyter-renderers",
+        "aaron-bond.better-comments",
+        "oderwat.indent-rainbow",
+    ],
+}
+```
