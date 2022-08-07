@@ -5,21 +5,16 @@ import PickerWheel from '../PickerWheel';
 import DifficultyOptions from '../DifficultyOptions';
 
 export default function Puzzle() {
-
 	return (
-		<div id="comp-puzzle">
+		<div id='comp-puzzle'>
+			<div id='puzzle-container' className='container'></div>
 
-			<div id="puzzle-container" className="container"></div>
+			<DifficultyOptions />
+			<PickerWheel />
 
-			<DifficultyOptions/>
-			<PickerWheel/>
-
-			{
-				setTimeout(() => {
-					main()
-				}, 200)
-			}
+			{setTimeout(() => {
+				main();
+			}, 200)}
 		</div>
 	);
 }
-

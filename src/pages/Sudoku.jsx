@@ -1,4 +1,3 @@
-import '../scss/sudoku.scss';
 import { Puzzle } from '../components';
 import { Container, Row } from 'react-bootstrap';
 import Main from '../layouts/Main';

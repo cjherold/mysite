@@ -1,4 +1,3 @@
-import './style.scss';
 import * as toast from 'izitoast';
 import { useEffect, useState } from 'react';
 import { Container, Row, Button } from 'react-bootstrap';

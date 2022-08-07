@@ -1,5 +1,5 @@
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './scss/main.scss';
 import { Routes, Route, HashRouter } from 'react-router-dom';
 import { Home, Sudoku, Mailcall, Error404 } from './pages';
 
