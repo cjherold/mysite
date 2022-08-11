@@ -1,15 +1,15 @@
-import Main from '../layouts/Main';
+import MainLayout from '../layouts/MainLayout';
 import { MainIntro, About, InfoTiles, Skills } from '../components';
 
 
 export default function Home() {
 
     return (
-        <Main>
+        <MainLayout pageName="home">
             <MainIntro/>
             <About/>
             <InfoTiles/>
             <Skills/>
-        </Main>
+        </MainLayout>
     )
 }

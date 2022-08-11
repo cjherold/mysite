@@ -1,10 +1,10 @@
 import { Container, Row } from 'react-bootstrap';
-import Main from '../../layouts/Main';
+import MainLayout from '../../layouts/MainLayout';
 
 
 export default function Error404() {
     return (
-        <Main>
+        <MainLayout>
             <Container style={{marginTop: '25%', marginBottom: '25%'}}>
                 <Row>
                     <div className="col-12 text-center">
@@ -13,6 +13,6 @@ export default function Error404() {
                     </div>
                 </Row>
             </Container>
-        </Main>
+        </MainLayout>
     )
 }

@@ -1,0 +1,18 @@
+
+@import './_variables.scss';
+
+
+html {
+	body {
+		#root {
+			font-family: $custom-font;
+			.navbar {
+				background-color: #00000000 !important;
+			}
+		}
+	}
+}
+
+#main-title {
+	font-size: 60px;
+}

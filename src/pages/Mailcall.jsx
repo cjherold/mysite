@@ -1,11 +1,11 @@
 import { Container, Row } from 'react-bootstrap';
 import { MailtoBuilder } from '../components';
-import Main from '../layouts/Main';
+import MainLayout from '../layouts/MainLayout';
 
 
 export default function Mailcall({ isDark }) {
 	return (
-		<Main>
+		<MainLayout pageName="mailcall">
 			<Container>
 				<Row>
 					<h1 id='main-title' className='text-center col-12 coloring-book'>
@@ -14,6 +14,6 @@ export default function Mailcall({ isDark }) {
 				</Row>
 			</Container>
 			<MailtoBuilder/>
-		</Main>
+		</MainLayout>
 	);
 }

@@ -1,222 +1,220 @@
-@import '../variables.scss';
+@import '../_variables.scss';
 
 $puzzle-background: rgb(13, 97, 149);
 $puzzle-border: rgba(13, 97, 149, 0.495);
 
-body {
-    // background-color: #333;
+#sudoku-page {
+  // h1 {
+  //   font-size: 60px;
+  // }
 
-}
-    h1 {
-      font-size: 60px;
-    }
-
-#comp-puzzle {
-    // font-family: "Rancho", cursive;
-    color: #f8f9fa;
-    font-size: 16px;
+  #comp-puzzle {
+      // font-family: "Rancho", cursive;
+      color: #f8f9fa;
+      font-size: 16px;
 
 
-    // @import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
-    .covered {
-      color: #d7f724 !important;
-    }
-
-    .difficulty-btn {
-      // background-color: $cb-container-background;
-      // border: $cb-container-border;
-      background-color: $cb-fill;
-      border: solid $cb-stroke;
-      &:hover {
-        box-shadow: $shadow-color;
+      // @import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
+      .covered {
+        color: #d7f724 !important;
       }
-    }
-    #new-game-title {
-      color: #333;
-    }
 
-    // #new-game {
-    //   background-color: $cb-fill;
-    //   border: solid $cb-stroke;
-    //   &:hover {
-    //     box-shadow: $shadow-color;
-    //   }
-    // }
-    label {
-      color: #333;
-    }
-
-
-
-    .tile-number {
-      font-size: 1rem;
-      pointer-events: none;
-    }
-
-    #puzzle-container {
-      // background-color: #41495cfc;
-      background-color: #333;
-      max-width: 550px;
-      padding: 24px;
-    }
-
-    .puzzle-tile {
-      background-color: #406ab8;
-      border: 1px solid #b6cae993;
-
-      width: 3.5rem;
-      height: 3.5rem;
-    }
-
-    .puzzle-tile:hover {
-      transition: 0.4s;
-      background-color: #2e59aace;
-    }
-
-    /* 9 big chucks seperation  ==============================*/
-    .puzzle-row:nth-child(3) {
-      margin-bottom: 3px;
-    }
-
-    .puzzle-row:nth-child(6) {
-      margin-bottom: 3px;
-    }
-
-    .puzzle-tile:nth-child(3) {
-      margin-right: 3px;
-    }
-
-    .puzzle-tile:nth-child(6) {
-      margin-right: 3px;
-    }
-
-    /* ===================================================== */
-    /* picker wheel ============================ */
-    #comp-pickerwheel {
-      position: absolute;
-      display: flex;
-      background-color: #2e59aa;
-      border: solid 2px #fff;
-      position: absolute;
-      /* left: 40%;
-      top: 40%; */
-      width: 250px;
-      height: 250px;
-      border-radius: 125px;
-    }
-
-    #comp-pickerwheel .close {
-      background-color: #fff;
-      margin: auto;
-      height: 50px;
-      width: 50px;
-      border: solid 1px #a1a1a1;
-      border-radius: 25px;
-      color: #333;
-
-      font-size: 25px;
-      line-height: 25px;
-      &:hover {
-        // transform: scale(1.1);
-        // border: solid 2px #333;
-        line-height: 30px;
-        font-size: 30px;
-        // box-shadow: inset 0 .5rem 1rem rgba(52, 52, 52, 0.333);
+      .difficulty-btn {
+        // background-color: $cb-container-background;
+        // border: $cb-container-border;
+        background-color: $cb-fill;
+        border: solid $cb-stroke;
+        &:hover {
+          box-shadow: $shadow-color;
+        }
       }
-    }
-
-    .num-btn {
-      /* display: block; */
-      position: absolute;
-      text-align: center;
-      background-color: #508dffce;
-      color: #fff;
-      border-radius: 25px;
-      font-size: 15px;
-      width: 50px;
-      height: 50px;
-      margin: 1px;
-      padding: 20px;
-      line-height: 0;
-      &:hover {
-        // box-shadow: inset 0 .5rem 1rem rgba(0,0,0,.15);
-        border-color: #fff;
+      #new-game-title {
+        color: #333;
       }
-    }
 
-    #btn-1 {
-      top: 10px;
-      right: 65px;
-    }
-
-    #btn-2 {
-      top: 50px;
-      right: 20px;
-    }
-
-    #btn-3 {
-      top: 110px;
-      right: 10px;
-    }
-
-    #btn-4 {
-      bottom: 30px;
-      right: 35px;
-    }
-
-    #btn-5 {
-      bottom: 10px;
-      left: 96px;
-    }
-
-    #btn-6 {
-      bottom: 30px;
-      left: 35px;
-    }
-
-    #btn-7 {
-      top: 110px;
-      left: 10px;
-    }
-
-    #btn-8 {
-      top: 50px;
-      left: 20px;
-    }
-
-    #btn-9 {
-      top: 10px;
-      left: 65px;
-    }
-
-    .winner {
-      transition: 0.4s ease-in-out;
-      transform: scale(2);
-    }
-
-    /* ========================================= */
-    // @media screen and (max-width: 600px) {
-    //   .puzzle-tile {
-    //     width: 2.5rem;
-    //     height: 2.5rem;
-    //   }
-
-    //   .tile-number {
-    //     font-size: 0.8rem;
-    //   }
-    // }
-    @media screen and (max-width: 600px) {
-      #puzzle-container {
-          padding: 14px;
-          max-width: 320px;
+      // #new-game {
+      //   background-color: $cb-fill;
+      //   border: solid $cb-stroke;
+      //   &:hover {
+      //     box-shadow: $shadow-color;
+      //   }
+      // }
+      label {
+        color: #333;
       }
-      .puzzle-tile {
-        width: 2rem;
-        height: 2rem;
-      }
+
+
 
       .tile-number {
-        font-size: 0.8rem;
+        font-size: 1rem;
+        pointer-events: none;
       }
-    }
+
+      #puzzle-container {
+        // background-color: #41495cfc;
+        background-color: #333;
+        max-width: 550px;
+        padding: 24px;
+      }
+
+      .puzzle-tile {
+        background-color: #406ab8;
+        border: 1px solid #b6cae993;
+
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+
+      .puzzle-tile:hover {
+        transition: 0.4s;
+        background-color: #2e59aace;
+      }
+
+      /* 9 big chucks seperation  ==============================*/
+      .puzzle-row:nth-child(3) {
+        margin-bottom: 3px;
+      }
+
+      .puzzle-row:nth-child(6) {
+        margin-bottom: 3px;
+      }
+
+      .puzzle-tile:nth-child(3) {
+        margin-right: 3px;
+      }
+
+      .puzzle-tile:nth-child(6) {
+        margin-right: 3px;
+      }
+
+      /* ===================================================== */
+      /* picker wheel ============================ */
+      #comp-pickerwheel {
+        position: absolute;
+        display: flex;
+        background-color: #2e59aa;
+        border: solid 2px #fff;
+        position: absolute;
+        /* left: 40%;
+        top: 40%; */
+        width: 250px;
+        height: 250px;
+        border-radius: 125px;
+      }
+
+      #comp-pickerwheel .close {
+        background-color: #fff;
+        margin: auto;
+        height: 50px;
+        width: 50px;
+        border: solid 1px #a1a1a1;
+        border-radius: 25px;
+        color: #333;
+
+        font-size: 25px;
+        line-height: 25px;
+        &:hover {
+          // transform: scale(1.1);
+          // border: solid 2px #333;
+          line-height: 30px;
+          font-size: 30px;
+          // box-shadow: inset 0 .5rem 1rem rgba(52, 52, 52, 0.333);
+        }
+      }
+
+      .num-btn {
+        /* display: block; */
+        position: absolute;
+        text-align: center;
+        background-color: #508dffce;
+        color: #fff;
+        border-radius: 25px;
+        font-size: 15px;
+        width: 50px;
+        height: 50px;
+        margin: 1px;
+        padding: 20px;
+        line-height: 0;
+        &:hover {
+          // box-shadow: inset 0 .5rem 1rem rgba(0,0,0,.15);
+          border-color: #fff;
+        }
+      }
+
+      #btn-1 {
+        top: 10px;
+        right: 65px;
+      }
+
+      #btn-2 {
+        top: 50px;
+        right: 20px;
+      }
+
+      #btn-3 {
+        top: 110px;
+        right: 10px;
+      }
+
+      #btn-4 {
+        bottom: 30px;
+        right: 35px;
+      }
+
+      #btn-5 {
+        bottom: 10px;
+        left: 96px;
+      }
+
+      #btn-6 {
+        bottom: 30px;
+        left: 35px;
+      }
+
+      #btn-7 {
+        top: 110px;
+        left: 10px;
+      }
+
+      #btn-8 {
+        top: 50px;
+        left: 20px;
+      }
+
+      #btn-9 {
+        top: 10px;
+        left: 65px;
+      }
+
+      .winner {
+        transition: 0.4s ease-in-out;
+        transform: scale(2);
+      }
+
+      /* ========================================= */
+      // @media screen and (max-width: 600px) {
+      //   .puzzle-tile {
+      //     width: 2.5rem;
+      //     height: 2.5rem;
+      //   }
+
+      //   .tile-number {
+      //     font-size: 0.8rem;
+      //   }
+      // }
+      @media screen and (max-width: 600px) {
+        #puzzle-container {
+            padding: 14px;
+            max-width: 320px;
+        }
+        .puzzle-tile {
+          width: 2rem;
+          height: 2rem;
+        }
+
+        .tile-number {
+          font-size: 0.8rem;
+        }
+      }
+  }
 }

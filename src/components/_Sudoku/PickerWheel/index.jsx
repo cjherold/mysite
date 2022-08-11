@@ -10,7 +10,7 @@ export default function PickerWheel() {
 			{[...Array(9)].map((each, index) => {
 				const number = index + 1;
 				return (
-					<Button id={'btn-' + number} className='num-btn' value={number}>
+					<Button key={index} id={'btn-' + number} className='num-btn' value={number}>
 						{number}
 					</Button>
 				);

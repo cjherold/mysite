@@ -1,16 +1,8 @@
-@import '../variables.scss';
+@import '../_variables.scss';
 
 
-html {
-	body {
-		#root {
-			font-family: $custom-font;
-			.navbar {
-				background-color: #00000000 !important;
-			}
-		}
-	}
-}
+// TODO move some container styles to common since other pages use them too
+#home-page {}
 
 
 

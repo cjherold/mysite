@@ -4,7 +4,7 @@ import $ from 'jquery';
 
 
 
-export default function Main({ children }) {
+export default function Main({ pageName, children }) {
     const [isDark, setIsDark] = useState(false);
 
 	// Set dark/light mode according to the browswer
@@ -20,10 +20,10 @@ export default function Main({ children }) {
 
     // Wrapper for each page that adds nav and footer
     return (
-        <>
+        <div id={`${pageName}-page`}>
             <TopNav/>
             {children}
             <Footer/>
-        </>
+        </div>
     )
 }
