@@ -5,9 +5,9 @@ import Mailcall from './Mailcall';
 import Quizbuilder from './Quizbuilder';
 
 export {
-    Home,
-    Sudoku,
-    Mailcall,
-    Quizbuilder,
-    Error404
+	Home,
+	Sudoku,
+	Mailcall,
+	Quizbuilder,
+	Error404,
 };

@@ -9,13 +9,13 @@ import MailtoBuilder from './_Mailcall';
 import QuizApp from './_Quizapp';
 
 export {
-    About,
-    MainIntro,
-    InfoTiles,
-    TopNav,
-    Puzzle,
-    Skills,
-    Footer,
-    MailtoBuilder,
-    QuizApp
+	About,
+	MainIntro,
+	InfoTiles,
+	TopNav,
+	Puzzle,
+	Skills,
+	Footer,
+	MailtoBuilder,
+	QuizApp,
 };

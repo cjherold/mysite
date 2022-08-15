@@ -3,7 +3,7 @@ import { Container, Row } from 'react-bootstrap';
 import MainLayout from '../layouts/MainLayout';
 
 
-export default function Quizbuilder({ isDark }) {
+export default function Quizbuilder() {
 	return (
 		<MainLayout pageName="quizbuilder">
 			<Container>

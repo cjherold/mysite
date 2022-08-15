@@ -7,6 +7,8 @@ export default function PickerWheel() {
 			<Button id='close-wheel-btn' className='close'>
 				&times;
 			</Button>
+
+			{/* create 9 buttons for the picker wheel  */}
 			{[...Array(9)].map((each, index) => {
 				const number = index + 1;
 				return (

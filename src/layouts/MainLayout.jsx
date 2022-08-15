@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 import $ from 'jquery';
 
 
-
 export default function Main({ pageName, children }) {
 	// Set dark/light mode according to the browswer
 	useEffect(() => {
@@ -12,12 +11,12 @@ export default function Main({ pageName, children }) {
 		if (usingDarkMode) return $('html').addClass('dark-theme');
 	}, []);
 
-    // Wrapper for each page that adds nav and footer
-    return (
-        <div id={`${pageName}-page`}>
-            <TopNav/>
-            {children}
-            <Footer/>
-        </div>
-    )
+	// Wrapper for each page that adds nav and footer
+	return (
+		<div id={`${pageName}-page`}>
+			<TopNav/>
+			{children}
+			<Footer/>
+		</div>
+	)
 }

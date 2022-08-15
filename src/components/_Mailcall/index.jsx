@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import { Container, Row, Button } from 'react-bootstrap';
 
 
-
 export default function MailtoBuilder() {
 	const [mailto, setMailto] = useState({
 		toField: '',
@@ -39,7 +38,7 @@ export default function MailtoBuilder() {
 	}, [mailto]);
 
 
-    return (
+	return (
 		<div id='comp-mailto'>
 			<Container className='coloring-book-container rounded p-4 shadow mailto-container mt-3 mb-5'>
 				<Row>
